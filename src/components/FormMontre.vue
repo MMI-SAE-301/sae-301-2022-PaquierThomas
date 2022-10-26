@@ -6,7 +6,7 @@
     // import { materiaux } from "@/types";
     import FormKitListColors from "./FormKitListColors.vue"
     import { supabase } from "../supabase";
-
+    import { materiaux } from "@/types";
     import { useRouter } from "vue-router";
 
     let user = supabase.auth.user()
@@ -24,7 +24,7 @@
     let { data, error } = await supabase
         .from("montre")
         .select("*")
-        .eq("id_montre", props.id);
+        .eq("id", props.id);
     if (error || !data)
         console.log("n'a pas pu charger le table Montre :", error);
     else montre.value = data[0];
@@ -44,30 +44,49 @@
 
 </script>
 <template>
-    <div class="p-2">
-        <div class="carousel w-64">
-            <montrecarre class="carousel-item w-64" v-bind="montre" id="profil"/>
+    <div class="p-2 flex">
+        <div class=" w-1/2 border-4 border-black">
+            <montrecarre class="" v-bind="montre" id="profil"/>
         </div>
-        <FormKit type="form" v-model="montre" :submit-attrs="{ classes: { input: 'bg-red-300 p-1 rounded' } }"
-        @submit="upsertMontre">
+        <div class="w-1/2 border-4 border-black p-4">
+            <FormKit type="form" v-model="montre" :config="{
+    classes: {
+      label: 'super-red'
+    }
+  }" :submit-attrs="{ classes: { input: ' flex justify-center  bg-black p-1 rounded-xl w-full text-[20px] font-semibold  text-white', outer:'mt-5' } }"
+            @submit="upsertMontre">
             
-            <!-- <FormKit label="materiau" value="src/assets/cuir.jpg"  type="radio" :options="materiaux" :sections-schema="{
-                inner: { $el: null},
-                decorator: { $el: null},
-            }"
-            input-class="peer sr-only"
-            options-class="flex gap-1"
-            >
-                <template #label="context">
-                    <div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600" :style="{ backgroundImage: `url(${context.option.value})`}"/> 
-                    <span class="sr-only"> {{ context.option.label }}</span>
-                </template>   
-            </FormKit> -->
-
-            <!-- Si on veut cacher le champ id il suffit de mettre outer-class="none" -->
-            <FormKitListColors name="boitier" label="boitier" />
-            <FormKitListColors name="bracelet" label="bracelet" />
-            <FormKitListColors name="ecran" label="ecran" />
-        </FormKit>
+                <!-- Si on veut cacher le champ id il suffit de mettre outer-class="none" -->
+                <FormKitListColors name="boitier" label="boitier" />
+                <FormKit name="materiaux_boitier" label="materiau boitier" value="src/assets/cuir.jpg"  type="radio" :options="materiaux" :sections-schema="{
+                    inner: { $el: null},
+                    decorator: { $el: null},
+                }"
+                input-class="peer sr-only"
+                options-class="flex gap-1"
+                >
+                    <template #label="context">
+                        <div class="w-14 h-14 rounded-full border-4 peer-checked:border-red-600" :style="{ backgroundImage: `url(${context.option.value})`}"/>
+                        <span class="sr-only"> {{ context.option.label }}</span>
+                    </template>
+                </FormKit>
+                <FormKitListColors name="bracelet" label="bracelet" />
+                <FormKit name="materiaux_bracelet" label="materiau bracelet" value="src/assets/cuir.jpg"  type="radio" :options="materiaux" :sections-schema="{
+                    inner: { $el: null},
+                    decorator: { $el: null},
+                }"
+                input-class="peer sr-only"
+                options-class="flex gap-1"
+                >
+                    <template #label="context">
+                        <div class="w-14 h-14 rounded-full border-4 peer-checked:border-red-600" :style="{ backgroundImage: `url(${context.option.value})`}"/>
+                        <span class="sr-only"> {{ context.option.label }}</span>
+                    </template>
+                </FormKit>
+                <FormKitListColors name="ecran" label="ecran" />
+                
+            </FormKit>
+        </div>
+        
     </div>
 </template>
