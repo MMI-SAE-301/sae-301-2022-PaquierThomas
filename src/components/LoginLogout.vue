@@ -10,5 +10,6 @@ import { supabase, user } from '../supabase';
     <button v-else @pointerdown="supabase.auth.signIn({provider: 'facebook'})">
         Se connecter avec Facebook
     </button>
+    
 </div>
 </template> 

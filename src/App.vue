@@ -17,6 +17,24 @@
           <code class="font-mono">/src/pages/connexion.vue</code>
         </router-link>
       </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/montre/new">
+          lien vers
+          <code class="font-mono">/src/pages/new.vue</code>
+        </router-link>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/montre/edit/id">
+          lien vers
+          <code class="font-mono">/src/pages/basket/[id].vue</code>
+        </router-link>
+      </li>
+      <li>
+        <router-link class="text-red-600 underline" to="/montre">
+          lien vers
+          <code class="font-mono">/src/pages/montre/index.vue</code>
+        </router-link>
+      </li>
     </ul>
   </nav>
 

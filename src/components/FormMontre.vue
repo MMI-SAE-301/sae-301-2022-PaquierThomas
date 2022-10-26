@@ -45,10 +45,6 @@
 </script>
 <template>
     <div class="p-2">
-        <ul class="flex gap-1 font-bold">
-            <li class="text-orange-600 underline"><a href="#profil">Profil</a></li>
-            <li class="text-green-400 underline"><a href="#dessus">Dessus</a></li>
-        </ul>
         <div class="carousel w-64">
             <montrecarre class="carousel-item w-64" v-bind="montre" id="profil"/>
         </div>
@@ -69,7 +65,6 @@
             </FormKit> -->
 
             <!-- Si on veut cacher le champ id il suffit de mettre outer-class="none" -->
-            <FormKit name="user_id" label="user_id" type= "text" :value="user.id" disable="disabled" />
             <FormKitListColors name="boitier" label="boitier" />
             <FormKitListColors name="bracelet" label="bracelet" />
             <FormKitListColors name="ecran" label="ecran" />
