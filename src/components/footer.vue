@@ -40,7 +40,7 @@
             </div>
             <div class="mb-6 md:mb-0">
                 <a href="/" class="flex items-center">
-                    <img src="/src/assets/image/Logo.svg" class="mr-48 mt-10 h-6 sm:h-full " alt="TikTak Logo" />
+                    <img src="../assets/image/Logo.svg" class="mr-48 mt-10 h-6 sm:h-full " alt="TikTak Logo" />
                 </a>
             </div>
         </div>

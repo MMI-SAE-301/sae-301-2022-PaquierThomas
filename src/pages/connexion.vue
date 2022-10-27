@@ -22,10 +22,10 @@ import LoginLogout from '../components/LoginLogout.vue'
               role="button"
               data-mdb-ripple="true"
               data-mdb-ripple-color="light"
-              @pointerdown="supabase.auth.signIn({provider: 'facebook'})"
+              @pointerdown="supabase.auth.signIn({provider: 'google'})"
             >
               <!-- Google -->
-              <img class="mr-6" src="/icone/Logo google.svg" alt="logo google">
+              <img class="mr-6" src="/icone/Logo-google.svg" alt="logo google">
               Se connecter avec google
             </a>
 
@@ -36,6 +36,7 @@ import LoginLogout from '../components/LoginLogout.vue'
               role="button"
               data-mdb-ripple="true"
               data-mdb-ripple-color="light"
+              @pointerdown="supabase.auth.signIn({provider: 'facebook'})"
             >
               <!-- Facebook -->
               <img src="/icone/facebook-alt.svg" class="mr-4" alt="logo facebook">
@@ -102,7 +103,7 @@ import LoginLogout from '../components/LoginLogout.vue'
         <!-- Image -->
         <div class="md:w-8/12 lg:w-6/12 md:mb-0 ml-8">
           <img
-            src="/src/assets/image/montre_connexion.png"
+            src="../assets/image/montre_connexion.png"
             class="w-full"
             alt="image montre connecte connexion"
           />

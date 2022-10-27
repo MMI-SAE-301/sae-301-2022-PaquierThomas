@@ -11,7 +11,7 @@ import montrecarre from '@/components/montrecarre.vue';
       <nav class=" border-gray-200 px-4 lg:px-6 py-5 bg-black">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="/" class="flex items-center">
-                <img src="src/assets/image/Logo.svg" class="mr-3 h-6 sm:h-20" alt="TikTak Logo" />
+                <img src="/src/assets/image/Logo.svg" class="mr-3 h-6 sm:h-20" alt="TikTak Logo" />
             </a>
             <div class="flex lg:order-2">
                 <!-- Menu mobile -->
@@ -40,7 +40,6 @@ import montrecarre from '@/components/montrecarre.vue';
         </div>
     </nav>
   </header>
-  <!-- <img src="../../public/image/montreconnecte 1.png" alt="montre connecte page d'accueil" class="absolute top-0 right-0 block w-full"> -->
   <section>
     <div>
       <div class="absolute ml-48 mt-32">
@@ -48,7 +47,7 @@ import montrecarre from '@/components/montrecarre.vue';
         <h1 class="font-extrabold text-white text-7xl mb-8">Tik <span class="text-orange-500">Tak</span></h1>
         <p class="font-medium text-white text-2xl w-[359px]">Le futur des montres connectées <span class="text-orange-500">100% personnalisable</span> à portée de poignets</p>
 
-        <img src="/src/assets/image/Ensemble montre.png" alt="montre 1" class="ml-[-50px] my-16">
+        <img src="../assets/image/Ensemble_montre.png" alt="montre 1" class="ml-[-50px] my-16">
 
         <div class="flex flex-row gap-6">
           <a href="/montre/new">
@@ -59,7 +58,7 @@ import montrecarre from '@/components/montrecarre.vue';
           <p class="col-2 font-semibold mt-4 text-white"> <span class="text-orange-500">-20%</span> pendant la première semaine</p>
         </div>
       </div>
-      <img src="/src/assets/image/montreconnecte 1.png" alt="montre">
+      <img src="/src/assets/image/montreconnecte-1.png" alt="montre">
     </div>
   
   </section>
@@ -104,7 +103,7 @@ import montrecarre from '@/components/montrecarre.vue';
         </div>
         <div class="mb-6 md:mb-0">
             <a href="/" class="flex items-center">
-                <img src="../../../public/image/Logo.svg" class="mr-48 mt-10 h-6 sm:h-full " alt="TikTak Logo" />
+                <img src="../assets/image/Logo.svg" class="mr-48 mt-10 h-6 sm:h-full " alt="TikTak Logo" />
             </a>
         </div>
     </div>

@@ -4,7 +4,7 @@
           <nav class="bg-white border-gray-200 px-4 lg:px-6 py-5 dark:bg-black">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                 <a href="/" class="flex items-center">
-                    <img src="/src/assets/image/Logo.svg" class="mr-3 h-6 sm:h-20" alt="TikTak Logo" />
+                    <img src="../assets/image/Logo.svg" class="mr-3 h-6 sm:h-20" alt="TikTak Logo" />
                 </a>
                 <div class="flex lg:order-2">
                     <!-- Menu mobile -->

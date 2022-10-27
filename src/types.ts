@@ -5,7 +5,7 @@ export interface Montre {
 }
 export const colors = {
   "#808080": "Gris",
-  "#000000": "Noir",
+  "#E41f3d": "Rouge-clair",
   "#0D3625": "Vert foncé",
   "#CF3737": "Rouge",
   "#AF9D87": "Beige",

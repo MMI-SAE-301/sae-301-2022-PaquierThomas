@@ -3,7 +3,7 @@
 - **Nom : Paquier**
 - **Prénom : Thomas**
 - **URL maquette Figma: https://www.figma.com/file/UegzjKF22HeswMWrzZnixp/SAE301_Maquette_Configurateur_Montre_TP?node-id=1%3A3**
-- **URL publique du site :**
+- **URL publique du site : https://sae301-tp.netlify.app**
 - **URL projet Supabase : https://npsiguzzauoucnvoechz.supabase.co**
   - [x] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
@@ -45,9 +45,9 @@ Noté sur 40.
   - Quelles techniques (Grilles Flex...)
     - ...
   - liens
-  - [ ] Mise en page fluide
+  - [x] Mise en page fluide (a peu pres)
 - [ ] Mobile First (0-1-2pts)
-  - [ ] Plusieurs tailles
+  - [x] Plusieurs tailles (connexion et liste montres)
     - Lesquelles...
 - [ ] Dark Mode (0-1-2pts)
   - [ ] Simple usage de 'dark:'
