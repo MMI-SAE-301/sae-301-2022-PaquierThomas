@@ -71,7 +71,7 @@
                     </template>
                 </FormKit>
                 <FormKitListColors name="bracelet" label="bracelet" />
-                <FormKit name="materiaux_bracelet" label="materiau bracelet" value="src/assets/cuir.jpg"  type="radio" :options="materiaux" :sections-schema="{
+                <FormKit name="materiaux_bracelet" label="materiau bracelet" value="../../public/materiau/cuir.jpg"  type="radio" :options="materiaux" :sections-schema="{
                     inner: { $el: null},
                     decorator: { $el: null},
                 }"

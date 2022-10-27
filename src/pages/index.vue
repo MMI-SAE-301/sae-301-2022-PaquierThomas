@@ -58,7 +58,7 @@ import montrecarre from '@/components/montrecarre.vue';
                         <a href="/montre/new" class="hover:underline dark:hover:text-orange-600">Personnaliser</a>
                     </li>
                     <li class="mb-4">
-                        <a href="/montre" class="hover:underline dark:hover:text-orange-600">Vos montres</a>
+                        <a href="#" class="hover:underline dark:hover:text-orange-600">Vos montres</a>
                     </li>
                     <li class="mb-4">
                         <a href="/connexion" class="hover:underline dark:hover:text-orange-600">Se connecter</a>

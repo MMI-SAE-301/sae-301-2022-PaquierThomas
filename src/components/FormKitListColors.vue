@@ -24,7 +24,8 @@
             options-class="flex gap-4"
             >
                 <template #label="context">
-                    <div class="w-14 h-14 rounded-full border-4 peer-checked:border-red-600" :style="{backgroundColor: context.option.value}"/> <span class="sr-only"> {{ context.option.label }}</span>
+                    <div class="w-14 h-14 rounded-full border-4 peer-checked:border-red-600 my-4" :style="{backgroundColor: context.option.value}"/>
+                     <span class="sr-only " > {{ context.option.label }}</span>
                 </template>   
     </FormKit>
 
