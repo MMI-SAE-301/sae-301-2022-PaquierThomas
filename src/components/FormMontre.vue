@@ -83,7 +83,8 @@
                         <span class="sr-only"> {{ context.option.label }}</span>
                     </template>
                 </FormKit>
-                <FormKitListColors name="ecran" label="ecran" />
+                <FormKitListColors name="ecran" label="ecran" label-class="font-bold text-red" />
+                <FormKit name="favori" label="ajouter en favori" type="checkbox" wrapper-class="flex p-2 gap-2"/>
                 
             </FormKit>
         </div>
