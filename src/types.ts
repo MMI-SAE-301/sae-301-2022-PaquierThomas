@@ -24,7 +24,7 @@ export const materiaux = [
     label: "Tissu",
   },
   {
-    value: "../public/materiau/synthetique.jpg",
+    value: "4bc02c6b-ecf9-4c2b-8e16-f71bd2d91caa",
     label: "Synthétique",
   },
 ];

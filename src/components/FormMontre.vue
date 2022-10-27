@@ -44,6 +44,7 @@
 
 </script>
 <template>
+    <h2 class="flex justify-center items-center font-bold text-4xl my-8">Customisez votre montre</h2>
     <div class="p-2 flex">
         <div class=" w-1/2 border-4 border-black">
             <montrecarre class="" v-bind="montre" id="profil"/>

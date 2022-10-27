@@ -8,10 +8,10 @@ import montrecarre from '@/components/montrecarre.vue';
 <template>
    <!-- Header -->
     <header >
-      <nav class=" border-gray-200 px-4 lg:px-6 py-5">
+      <nav class=" border-gray-200 px-4 lg:px-6 py-5 bg-black">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="/" class="flex items-center">
-                <img src="../../../public/image/Logo.svg" class="mr-3 h-6 sm:h-20" alt="TikTak Logo" />
+                <img src="src/assets/image/Logo.svg" class="mr-3 h-6 sm:h-20" alt="TikTak Logo" />
             </a>
             <div class="flex lg:order-2">
                 <!-- Menu mobile -->
@@ -24,13 +24,13 @@ import montrecarre from '@/components/montrecarre.vue';
             <div class="hidden items-end w-full lg:flex justify-between lg:w-auto lg:order-2 text-xl" id="mobile-menu-2">
                 <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                     <li>
-                        <a href="/" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:dark:hover:text-orange-600 lg:bg-transparent  lg:p-0 dark:text-gray-400" aria-current="page">Accueil</a>
+                        <a href="/" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:text-orange-600 underline underline-offset-4 lg:dark:hover:text-orange-600 lg:bg-transparent  lg:p-0 dark:text-gray-400" aria-current="page">Accueil</a>
                     </li>
                     <li>
                         <a href="/montre/new" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50  lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-600 dark:hover:bg-orange-600 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-orange-600">Personnaliser</a>
                     </li>
                     <li>
-                        <a href="/montre" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:text-orange-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-600 dark:hover:bg-orange-600 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-orange-600">Vos montres</a>
+                        <a href="/montre" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-600 dark:hover:bg-orange-600 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-orange-600">Vos montres</a>
                     </li>
                     <li>
                         <a href="/connexion" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-600 dark:hover:bg-orange-600 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-orange-600">Se connecter</a>
@@ -42,6 +42,25 @@ import montrecarre from '@/components/montrecarre.vue';
   </header>
   <!-- <img src="../../public/image/montreconnecte 1.png" alt="montre connecte page d'accueil" class="absolute top-0 right-0 block w-full"> -->
   <section>
+    <div>
+      <div class="absolute ml-48 mt-32">
+        <h2 class="text-white underline underline-offset-8 underline-grey font-semibold my-7">Nouvelle collection 2022</h2>
+        <h1 class="font-extrabold text-white text-7xl mb-8">Tik <span class="text-orange-500">Tak</span></h1>
+        <p class="font-medium text-white text-2xl w-[359px]">Le futur des montres connectées <span class="text-orange-500">100% personnalisable</span> à portée de poignets</p>
+
+        <img src="/src/assets/image/Ensemble montre.png" alt="montre 1" class="ml-[-50px] my-16">
+
+        <div class="flex flex-row gap-6">
+          <a href="/montre/new">
+            <button class="w-full py-2 bg-white border rounded-sm font-semibold text-2xl">
+              Customiser
+            </button>
+          </a>
+          <p class="col-2 font-semibold mt-4 text-white"> <span class="text-orange-500">-20%</span> pendant la première semaine</p>
+        </div>
+      </div>
+      <img src="/src/assets/image/montreconnecte 1.png" alt="montre">
+    </div>
   
   </section>
    <!-- Footer -->

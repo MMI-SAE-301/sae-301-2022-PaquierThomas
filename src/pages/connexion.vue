@@ -99,9 +99,10 @@ import LoginLogout from '../components/LoginLogout.vue'
 
           </form>
         </div>
+        <!-- Image -->
         <div class="md:w-8/12 lg:w-6/12 md:mb-0 ml-8">
           <img
-            src="../../public/image/montre_connexion.png"
+            src="/src/assets/image/montre_connexion.png"
             class="w-full"
             alt="image montre connecte connexion"
           />

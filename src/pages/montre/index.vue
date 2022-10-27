@@ -11,7 +11,7 @@ import { supabase, user } from "@/supabase";
       <nav class="bg-white border-gray-200 px-4 lg:px-6 py-5 dark:bg-black">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="/" class="flex items-center">
-                <img src="../../../public/image/Logo.svg" class="mr-3 h-6 sm:h-20" alt="TikTak Logo" />
+                <img src="/src/assets/image/Logo.svg" class="mr-3 h-6 sm:h-20" alt="TikTak Logo" />
             </a>
             <div class="flex lg:order-2">
                 <!-- Menu mobile -->
@@ -46,7 +46,7 @@ import { supabase, user } from "@/supabase";
   <!-- Titre page -->
   <div class="mt-5">
       <h2 class=" absolute text-4xl font-bold ml-12 items-center mt-32 text-white">Liste de vos montres</h2>
-      <img class="w-screen" src="\public\image\montre.png" alt="image montre fond">
+      <img class="w-screen" src="/src/assets/image/montre.png" alt="image montre fond">
   </div>
 
   <!-- Contenu page -->
@@ -106,7 +106,7 @@ import { supabase, user } from "@/supabase";
         </div>
         <div class="mb-6 md:mb-0">
             <a href="/" class="flex items-center">
-                <img src="../../../public/image/Logo.svg" class="mr-48 mt-10 h-6 sm:h-full " alt="TikTak Logo" />
+                <img src="/src/assets/image/Logo.svg" class="mr-48 mt-10 h-6 sm:h-full " alt="TikTak Logo" />
             </a>
         </div>
     </div>
