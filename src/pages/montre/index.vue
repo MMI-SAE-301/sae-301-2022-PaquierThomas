@@ -10,7 +10,7 @@ import { supabase, user } from "@/supabase";
     <header>
       <nav class="bg-white border-gray-200 px-4 lg:px-6 py-5 dark:bg-black">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-            <a href="/App" class="flex items-center">
+            <a href="/" class="flex items-center">
                 <img src="../../../public/image/Logo.svg" class="mr-3 h-6 sm:h-20" alt="TikTak Logo" />
             </a>
             <div class="flex lg:order-2">
@@ -24,13 +24,13 @@ import { supabase, user } from "@/supabase";
             <div class="hidden items-end w-full lg:flex justify-between lg:w-auto lg:order-2 text-xl" id="mobile-menu-2">
                 <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                     <li>
-                        <a href="/" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent  lg:p-0 dark:text-gray-400" aria-current="page">Accueil</a>
+                        <a href="/" class="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:dark:hover:text-orange-600 lg:bg-transparent  lg:p-0 dark:text-gray-400" aria-current="page">Accueil</a>
                     </li>
                     <li>
                         <a href="/montre/new" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50  lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-600 dark:hover:bg-orange-600 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-orange-600">Personnaliser</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:text-orange-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-600 dark:hover:bg-orange-600 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-orange-600">Vos montres</a>
+                        <a href="/montre" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:text-orange-600 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-600 dark:hover:bg-orange-600 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-orange-600">Vos montres</a>
                     </li>
                     <li>
                         <a href="/connexion" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-orange-600 dark:hover:bg-orange-600 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-orange-600">Se connecter</a>
@@ -52,7 +52,7 @@ import { supabase, user } from "@/supabase";
   <!-- Contenu page -->
   <div class="p-2">
     <section class="">
-      <h2 class="font-bold text-3xl my-12">Consultez vos créations</h2>
+      <h2 class="font-bold text-3xl my-12 ml-6">Consultez vos créations</h2>
       
       <ListeMontre class="gap-32 place-items-center justify-center grid grid-cols-3" :max="9" />
     </section>
@@ -64,4 +64,52 @@ import { supabase, user } from "@/supabase";
     </div>
 
   </div>
+
+  <!-- Footer -->
+  <footer class="p-12 bg-white sm:p-6 dark:bg-black mt-12 ">
+    <div class="md:flex md:justify-between">
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 ml-12 mt-8">
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-orange-600">Plan du site</h2>
+                <ul class="text-gray-600 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="/" class="hover:underline dark:hover:text-orange-600">Accueil</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="/montre/new" class="hover:underline dark:hover:text-orange-600">Personnaliser</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline dark:hover:text-orange-600">Vos montres</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="/connexion" class="hover:underline dark:hover:text-orange-600">Se connecter</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-orange-600">Parties légales</h2>
+                <ul class="text-gray-600 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="https://github.com/themesberg/flowbite" class="hover:underline dark:hover:text-orange-600 ">Mentions légales</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline dark:hover:text-orange-600">Politique de confidentialité</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline dark:hover:text-orange-600">Conditions d'utilisation</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline dark:hover:text-orange-600">Conditions générale de vente</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mb-6 md:mb-0">
+            <a href="/" class="flex items-center">
+                <img src="../../../public/image/Logo.svg" class="mr-48 mt-10 h-6 sm:h-full " alt="TikTak Logo" />
+            </a>
+        </div>
+    </div>
+    
+  </footer>
 </template>
